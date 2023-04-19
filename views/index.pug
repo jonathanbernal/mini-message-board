@@ -3,3 +3,16 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  h2 Messages
+  ol
+    each message in messages
+      li
+        p User:
+          strong=message.user
+        p Message:
+          strong=message.text
+        p Added: 
+          strong=message.added.toDateString()
+  a(href='/new')
+    button New Message
+        

@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style: none;
+  gap: 1rem;
+}
+
+strong {
+  display: flex;
+  align-items: center;
+}
